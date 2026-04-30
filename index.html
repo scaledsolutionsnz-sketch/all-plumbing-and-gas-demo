@@ -7,7 +7,7 @@
 <meta name="description" content="All Plumbing and Gas — certified plumber and gas fitter serving Greymouth and the West Coast. 15+ years experience, 24/7 emergency callouts. Call Glenn on 021 182 4215.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
   --ink:    #071820;
@@ -16,7 +16,7 @@
   --amber:  #b82408;
   --amber2: #9a1e06;
   --amberL: #fce8e3;
-  --off:    #f4efe0;
+  --off:    #eee8c8;
   --white:  #ffffff;
   --text:   #071820;
   --body:   rgba(7,24,32,0.65);
@@ -33,12 +33,11 @@ nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 6%; height: 120px;
-  transition: background .35s, box-shadow .35s;
+  background: #eee8c8;
+  transition: box-shadow .35s;
 }
 nav.scrolled {
-  background: rgba(7,24,32,.97);
-  backdrop-filter: blur(18px);
-  box-shadow: 0 1px 0 rgba(255,255,255,.06);
+  box-shadow: 0 2px 16px rgba(7,24,32,.14);
 }
 .nav-brand {
   text-decoration: none;
@@ -47,11 +46,11 @@ nav.scrolled {
 .nav-brand img { height: 112px; width: auto; display: block; }
 .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
 .nav-links a {
-  color: rgba(255,255,255,.6); text-decoration: none;
+  color: rgba(7,24,32,.58); text-decoration: none;
   font-size: .78rem; font-weight: 500; letter-spacing: .09em; text-transform: uppercase;
   transition: color .2s;
 }
-.nav-links a:hover { color: #fff; }
+.nav-links a:hover { color: #071820; }
 .nav-cta {
   background: var(--amber) !important; color: #fff !important; font-weight: 600 !important;
   padding: .45rem 1.25rem; border-radius: 6px;
@@ -59,7 +58,7 @@ nav.scrolled {
 }
 .nav-cta:hover { background: var(--amber2) !important; transform: translateY(-1px) !important; }
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 2px; background: #fff; transition: all .3s; }
+.hamburger span { display: block; width: 22px; height: 2px; background: #071820; transition: all .3s; }
 .mob-menu {
   display: none; position: fixed; top: 120px; left: 0; right: 0;
   background: rgba(7,24,32,.98); backdrop-filter: blur(18px);
@@ -87,9 +86,9 @@ nav.scrolled {
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(108deg, rgba(7,24,32,.96) 0%, rgba(7,24,32,.82) 52%, rgba(7,24,32,.45) 100%);
+  background: linear-gradient(108deg, rgba(7,24,32,.97) 0%, rgba(7,24,32,.85) 55%, rgba(7,24,32,.42) 100%);
 }
-.hero-fade { position: absolute; bottom: 0; left: 0; right: 0; height: 180px; background: linear-gradient(to top, var(--white), transparent); }
+.hero-fade { position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to top, rgba(7,24,32,.6), transparent); }
 .hero-inner {
   position: relative; z-index: 2;
   padding: 120px 6% 5rem;
@@ -102,7 +101,7 @@ nav.scrolled {
 }
 .hero-tag::before { content: ''; width: 24px; height: 2px; background: var(--amber); }
 h1.hero-h1 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: clamp(3rem, 5.8vw, 5.2rem);
   font-weight: 800; line-height: .97; color: #fff;
   letter-spacing: -.025em; margin-bottom: 1.5rem;
@@ -116,7 +115,7 @@ h1.hero-h1 .acc { color: var(--amber); }
 .btn-primary {
   display: inline-flex; align-items: center; gap: .5rem;
   background: var(--amber); color: #fff; text-decoration: none;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: .95rem;
+  font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .95rem;
   padding: .95rem 2.2rem; border-radius: 8px; transition: all .25s; border: none; cursor: pointer;
 }
 .btn-primary:hover { background: var(--amber2); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(184,36,8,.38); }
@@ -143,7 +142,7 @@ h1.hero-h1 .acc { color: var(--amber); }
 }
 .t-item {
   display: flex; align-items: center; gap: .65rem;
-  font-family: 'Syne', sans-serif; font-size: .78rem; font-weight: 700;
+  font-family: 'Outfit', sans-serif; font-size: .78rem; font-weight: 700;
   letter-spacing: .07em; text-transform: uppercase; color: #fff;
 }
 .t-item svg { width: 15px; height: 15px; stroke: #fff; flex-shrink: 0; }
@@ -157,7 +156,7 @@ section { padding: 5.5rem 6%; }
 }
 .eyebrow::before { content: ''; width: 16px; height: 2px; background: var(--amber); }
 .sh {
-  font-family: 'Syne', sans-serif; font-weight: 800;
+  font-family: 'Outfit', sans-serif; font-weight: 800;
   font-size: clamp(2rem, 3.5vw, 3rem);
   color: var(--text); letter-spacing: -.025em; line-height: .97; margin-bottom: 1.1rem;
 }
@@ -184,7 +183,7 @@ section { padding: 5.5rem 6%; }
   display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem;
 }
 .svc-ico svg { width: 22px; height: 22px; stroke: var(--amber2); }
-.svc-name { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: .5rem; }
+.svc-name { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: .5rem; }
 .svc-desc { font-size: .86rem; color: var(--body); line-height: 1.68; }
 
 /* ── ABOUT ── */
@@ -195,7 +194,7 @@ section { padding: 5.5rem 6%; }
 .about-img-badge {
   position: absolute; bottom: -1.2rem; right: -1.2rem;
   background: var(--amber); color: var(--ink);
-  font-family: 'Syne', sans-serif; font-weight: 800;
+  font-family: 'Outfit', sans-serif; font-weight: 800;
   border-radius: 14px; padding: 1.1rem 1.5rem; text-align: center;
   box-shadow: 0 8px 24px rgba(184,36,8,.4);
 }
@@ -245,7 +244,7 @@ section { padding: 5.5rem 6%; }
   border-radius: 18px; padding: 2rem 2.4rem; text-align: center; min-width: 205px;
 }
 .g-badge-lbl { font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.38); margin-bottom: .4rem; }
-.g-score { font-family: 'Syne', sans-serif; font-size: 4rem; font-weight: 800; color: #fff; line-height: 1; }
+.g-score { font-family: 'Outfit', sans-serif; font-size: 4rem; font-weight: 800; color: #fff; line-height: 1; }
 .g-stars { display: flex; justify-content: center; gap: 3px; margin: .4rem 0; }
 .g-star { color: #b82408; font-size: 1.1rem; }
 .g-count { font-size: .72rem; color: rgba(255,255,255,.33); margin-bottom: 1.1rem; }
@@ -270,7 +269,7 @@ section { padding: 5.5rem 6%; }
 .rev-avatar {
   width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Syne', sans-serif; font-size: .9rem; font-weight: 800; color: #fff;
+  font-family: 'Outfit', sans-serif; font-size: .9rem; font-weight: 800; color: #fff;
 }
 .rev-name { font-size: .9rem; font-weight: 600; color: #fff; }
 .rev-loc { font-size: .73rem; color: rgba(255,255,255,.36); }
@@ -308,7 +307,7 @@ section { padding: 5.5rem 6%; }
   background: var(--white); border: 1px solid rgba(184,36,8,.1);
   border-radius: 20px; padding: 2.5rem; box-shadow: 0 8px 40px rgba(7,24,32,.07);
 }
-.form-title { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--text); margin-bottom: 1.6rem; }
+.form-title { font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--text); margin-bottom: 1.6rem; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem; }
 .form-group { margin-bottom: .9rem; }
 .form-group label { display: block; font-size: .68rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); margin-bottom: .38rem; }
@@ -316,7 +315,7 @@ section { padding: 5.5rem 6%; }
 .form-group select,
 .form-group textarea {
   width: 100%; padding: .78rem 1rem;
-  background: var(--off); border: 1px solid rgba(7,24,32,.1);
+  background: var(--white); border: 1px solid rgba(7,24,32,.1);
   border-radius: 9px; color: var(--text); font-family: 'Inter', sans-serif;
   font-size: .9rem; outline: none; transition: border-color .2s, box-shadow .2s;
 }
@@ -330,7 +329,7 @@ section { padding: 5.5rem 6%; }
   width: 100%; padding: .95rem; background: var(--amber); color: #fff;
   border: none; border-radius: 9px; font-size: .95rem; font-weight: 700;
   cursor: pointer; transition: all .25s; margin-top: .2rem;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .form-submit:hover { background: var(--amber2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(184,36,8,.3); }
 .form-note { font-size: .74rem; color: var(--dim); text-align: center; margin-top: .75rem; }
@@ -343,7 +342,7 @@ footer {
   align-items: center; gap: 2rem;
   border-top: 1px solid rgba(255,255,255,.06);
 }
-.foot-brand { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .3rem; }
+.foot-brand { font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .3rem; }
 .foot-sub { font-size: .76rem; color: rgba(255,255,255,.38); margin-bottom: .25rem; }
 .foot-copy { font-size: .72rem; color: rgba(255,255,255,.24); }
 .foot-links { display: flex; gap: 2rem; }
@@ -365,7 +364,7 @@ footer {
 }
 .vehicle-text { max-width: 480px; }
 .vehicle-h {
-  font-family: 'Syne', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-family: 'Outfit', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 800; color: #fff; line-height: 1; letter-spacing: -.025em;
   margin-bottom: .7rem;
 }
